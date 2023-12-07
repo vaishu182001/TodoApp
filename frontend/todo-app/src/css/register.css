@@ -1,0 +1,138 @@
+
+/* Common styles for all screen sizes */
+.register-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .register-container {
+    background-color: #6fd493;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 10px 10px 5px rgb(110, 151, 115);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin: auto;
+    height: auto; /* Allow the container to adjust its height based on content */
+  }
+  
+  .register-container h1 {
+    margin-bottom: 20px;
+    color: #333;
+    text-shadow: 2px 2px 5px #333;
+  }
+  
+  .register-image {
+    margin-bottom: 20px;
+    max-width: 100%;
+    height: auto; /* Allow the image to adjust its height based on the width */
+  }
+  
+  .input-container {
+    margin-bottom: 15px; /* Adjust margin between input fields */
+    position: relative;
+  }
+  
+  .input-container input {
+    width: 90%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+    outline: none;
+  }
+  
+  .input-container input:focus {
+    background-color: #9cc0c9;
+  }
+  
+  .input-container .icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+  }
+  
+  .register-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .register-button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Password Strength Styles */
+  .password-strength {
+    font-size: 14px;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+  }
+  
+  .strength-0 {
+    background-color: red;
+    color: white;
+  }
+  
+  .strength-1 {
+    background-color: orange;
+    color: white;
+  }
+  
+  .strength-2 {
+    background-color: yellow;
+  }
+  
+  .strength-3 {
+    background-color: green;
+    color: white;
+  }
+  
+  .strength-4 {
+    background-color: darkgreen;
+    color: white;
+  }
+  
+  /* Media queries for responsive design */
+@media screen and (max-width: 1200px) {
+  .register-container {
+      max-width: 80%; /* Adjust container width for large screens */
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .register-container {
+      max-width: 60%; /* Adjust container width for medium screens */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .register-container {
+      max-width: 50%; /* Allow the container to take up the full width on smaller screens */
+  }
+
+  .input-container input {
+      padding: 10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .register-container {
+      padding: 15px; /* Adjust container padding for smaller screens */
+  }
+
+  .input-container input {
+      font-size: 16px; /* Adjust font size for smaller screens */
+  }
+}

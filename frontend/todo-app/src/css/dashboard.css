@@ -1,0 +1,139 @@
+/* Navbar styles */
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #55aacf;
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    
+  }
+  
+  .navbar li {
+    /* Remove the float property */
+    display: inline-block; /* Display items inline */
+  }
+  
+  .navbar li a, .navbar .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold; /* Make text bold */
+  }
+  
+  .navbar li a:hover, .navbar .dropdown:hover .dropbtn {
+    background-color: rgb(85, 115, 196);
+  }
+  
+  .navbar .dropdown {
+    display: inline-block;
+    position: relative; /* Add relative positioning for the dropdown */
+  }
+  
+  .navbar .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #54bc7a;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: 0; /* Adjust the left property to align with the left side */
+  }
+  
+  .navbar .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-weight: bold; /* Make text in the dropdown bold */
+  }
+  
+  .navbar .dropdown-content a:hover {
+    background-color: #6c6d6c;
+  }
+  
+  .navbar .dropdown:hover .dropdown-content {
+    display: block;
+  }
+.addtaskbutton
+{
+    background-color: #007BFF;
+    color: white   ;        
+    padding: 10px 20px  ;    
+    border: none    ;     
+    border-radius: 5px;  
+    cursor: pointer;   
+    margin:10px;
+    font-size: larger;
+    
+}
+.sort
+{
+    background-color: #007BFF;
+    color: white   ;        
+    padding: 10px 20px  ;    
+    border: none    ;     
+    border-radius: 5px;  
+    cursor: pointer;   
+    margin:10px;
+    font-size: larger;
+    
+}
+.delete-all-button
+{
+    background-color: #007BFF;
+    color: white   ;        
+    padding: 10px 20px  ;    
+    border: none    ;     
+    border-radius: 5px;  
+    cursor: pointer;   
+    margin:10px;
+    font-size: larger;
+    
+}
+.welcome-message {
+  text-align: right; /* Align the text to the right side */
+  font-size: 18px; /* Adjust the font size as needed */
+  font-weight: bold; /* Make the text bold */
+  padding: 0 10px; /* Add padding to create some space */
+  flex-grow: 1; /* Allow the message to expand and push other elements to the left */
+  display: flex;
+  justify-content: flex-end; /* Align the text to the right */
+  align-items: center; /* Vertically center the text */
+  /* You can add more styling properties as needed */
+ /* Background color */
+  color: white; /* Text color */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 20px; /* Padding for the message */
+  margin-right: 0px; /* Right margin for spacing */
+  cursor: pointer; /* Cursor on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar li {
+      display: inline-block; /* Keep items in a single line */
+      text-align: center; /* Center-align the text */
+      padding: 10px 0; /* Adjust padding for better spacing */
+  }
+
+  .navbar li a,
+  .navbar .dropbtn {
+      padding: 10px 16px; /* Adjust padding for better spacing */
+  }
+
+  .navbar .dropdown {
+      display: inline-block; /* Keep dropdown items inline */
+  }
+
+  .navbar .dropdown-content {
+      position: absolute; /* Keep dropdown content positioned absolutely */
+  }
+
+  .navbar .dropdown:hover .dropdown-content {
+      display: block;
+  }
+}

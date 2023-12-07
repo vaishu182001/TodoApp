@@ -1,0 +1,205 @@
+.task-table-container {
+    margin: 20px;
+  }
+  
+  .task-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #92c58d;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px rgba(6, 6, 6, 0.3); /* Add shadow effect */
+  }
+  
+  .task-table th,
+  .task-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #dcdcdc;
+  }
+  
+  .task-table thead {
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .task-table tbody tr:nth-child(even) {
+    background-color: #e6e6e6;
+  }
+  
+  .task-table tbody tr:hover {
+    background-color: #dcdcdc;
+    transition: background-color 0.3s;
+  }
+  
+  .task-icons {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+    font-size: 18px;
+    color: #101011;
+    border-radius: 50%;
+    line-height: 1;
+    vertical-align: middle;
+  }
+  
+  .task-icons i {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+  
+  .action-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 0 5px;
+    color: #101011;
+    transition: color 0.3s;
+  }
+  .task-table i.material-icons {
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+  }
+  
+  .action-button:hover {
+    color: #e74c3c; /* Change the color on hover */
+  }
+  
+  /* Styling for edit, delete, and remove icons */
+  .action-button i {
+    font-size: 20px;
+    color: #3498db; /* Edit icon color */
+    transition: color 0.3s;
+  }
+  
+  .action-button i:hover {
+    color: #e74c3c; /* Change icon color on hover */
+  }
+
+  /* Add this CSS to remove the border and set background colors for the icons */
+.edit-icon,
+.delete-icon,
+.remove-icon {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-size: 18px;
+  color: #101011;
+  transition: color 0.3s;
+  background-color: transparent; /* Set the background color to transparent */
+}
+
+.edit-icon:hover,
+.delete-icon:hover,
+.remove-icon:hover {
+  color: #e74c3c; /* Change the color on hover */
+  background-color: transparent; /* Set the background color to transparent on hover */
+}
+
+/* Additional styling as needed */
+
+  .edit-icon {
+    color: #3498db; /* Set the color you like */
+    font-size: 24px; /* Adjust the size as needed */
+    transition: color 0.3s;
+  }
+  
+  .edit-icon:hover {
+    color: #090909; /* Change the color on hover */
+  }
+  
+  /* Delete Icon */
+  .delete-icon {
+    color: #e74c3c; /* Set the color you like */
+    font-size: 24px; /* Adjust the size as needed */
+    transition: color 0.3s;
+  }
+  
+  .delete-icon:hover {
+    color: #090909; /* Change the color on hover */
+  }
+  
+  /* Remove Icon */
+  .remove-icon {
+    color: #156829; /* Set the color you like */
+    font-size: 24px; /* Adjust the size as needed */
+    transition: color 0.3s;
+  }
+  
+  .remove-icon:hover {
+    color: #0a0a09; /* Change the color on hover */
+  }  
+  /* Additional styling as needed */
+  
+  
+  /* Media query for medium-sized screens */
+@media (max-width: 992px) {
+    .task-icons {
+      font-size: 14px;
+      width: 18px;
+      height: 18px;
+    }
+  
+    .task-icons i {
+      font-size: 14px;
+    }
+  
+    .action-button {
+      font-size: 16px;
+      margin: 0 4px;
+    }
+  
+    /* Additional styling for medium-sized screens as needed */
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 576px) {
+    .task-icons {
+      font-size: 12px;
+      width: 16px;
+      height: 16px;
+    }
+  
+    .task-icons i {
+      font-size: 12px;
+    }
+  
+    .action-button {
+      font-size: 14px;
+      margin: 0 3px;
+    }
+  
+    /* Additional styling for smaller screens as needed */
+  }
+  
+  /* Media query for very small screens (e.g., mobile) */
+  @media (max-width: 360px) {
+    .task-icons {
+      font-size: 10px;
+      width: 14px;
+      height: 14px;
+    }
+  
+    .task-icons i {
+      font-size: 10px;
+    }
+  
+    .action-button {
+      font-size: 12px;
+      margin: 0 2px;
+    }
+  
+    /* Additional styling for very small screens as needed */
+  } 
+  

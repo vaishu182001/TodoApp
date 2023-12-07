@@ -1,0 +1,62 @@
+.task-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .task-form {
+    width: 800px;
+    padding: 60px;
+    background-color: #64cf68; /* Green background color */
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Center the button horizontally */
+  }
+  
+  .form-group {
+    margin-bottom: 30px;
+    text-align: left; /* Align text in input elements to the left */
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .pin-button {
+    width: 30%; /* Set the button width to 50% */
+    padding: 15px; /* Increase padding for better centering */
+    background-color: #007acc; /* Blue button color */
+    color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-right: 3px;
+  }
+  
+  .pin-button:hover {
+    background-color: #005d99; /* Darker blue on hover */
+  }
+  .cancel-button {
+    width: 30%; /* Set the button width to 50% */
+    padding: 15px; /* Increase padding for better centering */
+    background-color: #007acc; /* Blue button color */
+    color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  .cancel-button:hover {
+    background-color: #005d99; /* Darker blue on hover */
+  }
+  

@@ -1,0 +1,52 @@
+/* EditTask.css */
+
+/* Center the form on the page */
+.task-form-container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Style the form */
+  .task-form1 {
+    width: 800px;
+    padding: 60px;
+    background-color: #64cf68; /* Green background color */
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Center the button horizontally */
+  }
+  
+  .form-group1 {
+    margin-bottom: 30px;
+    text-align: left; /* Align text in input elements to the left */
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  /* Style the "Edit Task" button */
+  .edit1-button {
+    width: 50%; /* Set the button width to 50% */
+    padding: 15px; /* Increase padding for better centering */
+    background-color: #2675a9; /* Blue button color */
+    color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  .edit1-button:hover {
+    background-color: #5fd590; /* Darker blue on hover */
+  }
+  
